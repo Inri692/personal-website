@@ -49,20 +49,23 @@ const Home = () => {
                   ))}
                 </div>
               </div>
-              <div
-                id="projects"
-                className="max-h-screen flex flex-cols gap-4 mt-40"
-              >
-                <div className="flex flex-col">
-                  {projects.map((project) => (
-                    <CardProjects
-                      key={project.id}
-                      image={project.image}
-                      name={project.name}
-                      description={project.description}
-                      link={project.link}
-                    />
-                  ))}
+
+              <div id="projects">
+                <h1 className="font-bold text-5xl text-[#00FFCA] mt-40 mx-10">
+                  My Projects
+                </h1>
+                <div className="max-h-screen flex flex-cols gap-4">
+                  <div className="flex flex-col">
+                    {projects.map((project) => (
+                      <CardProjects
+                        key={project.id}
+                        image={project.image}
+                        name={project.name}
+                        description={project.description}
+                        link={project.link}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </Layout>

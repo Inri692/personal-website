@@ -44,7 +44,7 @@ export function CardProjects({
             />
           </div>
 
-          <div className="flex-col text-white">
+          <div className="flex-col ">
             <p className="m-4 text-2xl font-bold">{name}</p>
             <hr className="hr-text" data-content="" />
 
