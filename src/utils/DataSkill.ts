@@ -8,47 +8,47 @@ const skills: Skill[] = [
   {
     id: 1,
     name: "JavaScript",
-    image: "public/img/Js.svg",
+    image: "https://www.svgrepo.com/show/452045/js.svg",
   },
   {
     id: 2,
     name: "TypeScript",
-    image: "public/img/typescript.svg",
+    image: "https://www.svgrepo.com/show/374146/typescript-official.svg",
   },
   {
     id: 3,
     name: "HTML5",
-    image: "public/img/html.svg",
+    image: "https://www.svgrepo.com/show/452228/html-5.svg",
   },
   {
     id: 4,
     name: "CSS3",
-    image: "public/img/css.svg",
+    image: "https://www.svgrepo.com/show/373535/css.svg",
   },
   {
     id: 5,
     name: "Sass",
-    image: "public/img/SASS.SVG",
+    image: "https://www.svgrepo.com/show/354310/sass.svg",
   },
   {
     id: 6,
     name: "ReactJs",
-    image: "public/img/REACT.svg",
+    image: "https://www.svgrepo.com/show/374032/reactjs.svg",
   },
   {
     id: 7,
     name: "NextJs",
-    image: "public/img/next.svg",
+    image: "https://www.svgrepo.com/show/378440/nextjs-fill.svg",
   },
   {
     id: 8,
     name: "TailwindCss",
-    image: "public/img/tailwind.SVG",
+    image: "https://www.svgrepo.com/show/374118/tailwind.svg",
   },
   {
     id: 9,
     name: "Bootstrap",
-    image: "public/img/bootstrap.png",
+    image: "https://www.svgrepo.com/show/353498/bootstrap.svg",
   },
 ];
 
