@@ -1,8 +1,6 @@
-import React from "react";
-
 const Name = () => {
   return (
-    <div className="h-screen mt-48">
+    <div className="">
       <div className="flex justify-around">
         <div className="flex flex-row gap-4 place-items-center">
           <span className="font-bold text-5xl text-[#00FFCA]">Hello...</span>

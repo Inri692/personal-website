@@ -24,13 +24,19 @@ const Home = () => {
 
           <div className="basis-3/4 bg-black h-screen rounded-lg">
             <Layout>
-              <div id="name">
+              <div
+                id="name"
+                className="h-screen flex justify-center items-center"
+              >
                 <Name />
               </div>
               <div id="about">
                 <About />
               </div>
               <div id="skill">
+                <h1 className="font-bold text-5xl text-[#00FFCA] mx-10">
+                  Skills
+                </h1>
                 <div className="grid grid-cols-3 gap-4 mx-10">
                   {skills.map((skill) => (
                     <CardSkills
@@ -50,18 +56,28 @@ const Home = () => {
           <div className="basis-1/6">
             <div className="navbar w-20 h-3/6 bg-white m-16 mt-32  flex justify-center rounded-full border-2 border-[#00FFCA]">
               <div className="flex flex-col justify-around text-black m-3">
-                <a href="#name">
-                  <BiHome className=" w-12 h-12" />
-                </a>
-                <a href="#about">
-                  <BsFillPersonFill className=" w-12 h-12" />
-                </a>
-                <a href="#skill">
-                  <BsCodeSlash className=" w-12 h-12" />
-                </a>
-                <a href="#projects">
-                  <CgWebsite className=" w-12 h-12" />
-                </a>
+                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#14FFEC] duration-300 ">
+                  <a href="#name">
+                    <BiHome className=" w-12 h-12" />
+                  </a>
+                </button>
+                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#14FFEC] duration-300 ">
+                  <a href="#about">
+                    <BsFillPersonFill className=" w-12 h-12" />
+                  </a>
+                </button>
+
+                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#14FFEC] duration-300 ">
+                  <a href="#skill">
+                    <BsCodeSlash className=" w-12 h-12" />
+                  </a>
+                </button>
+
+                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#14FFEC] duration-300 ">
+                  <a href="#projects">
+                    <CgWebsite className=" w-12 h-12" />
+                  </a>
+                </button>
               </div>
             </div>
           </div>
