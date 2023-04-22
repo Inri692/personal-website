@@ -6,10 +6,12 @@ import { CgWebsite } from "react-icons/cg";
 
 import { Layout } from "../components/Layout";
 import SideProfil from "../components/SideProfil";
+import { CardSkills } from "../components/Card";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import Name from "../components/Name";
-import Skills from "../components/Skills";
+
+import skills from "../utils/DataSkill";
 
 const Home = () => {
   return (
@@ -29,7 +31,15 @@ const Home = () => {
                 <About />
               </div>
               <div id="skill">
-                <Skills />
+                <div className="grid grid-cols-3 gap-4 mx-10">
+                  {skills.map((skill) => (
+                    <CardSkills
+                      key={skill.id}
+                      image={skill.image}
+                      name={skill.name}
+                    />
+                  ))}
+                </div>
               </div>
               <div id="projects">
                 <Projects />
