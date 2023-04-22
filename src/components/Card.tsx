@@ -33,26 +33,23 @@ export function CardProjects({
   link,
 }: CardProject) {
   return (
-    <div className="grid place-items-center m-20 ">
+    <div className="grid place-items-center mx-10 my-10">
       <div className="rounded-md bg-gray-800 border-2 rounded-xl border-white">
         <div className="md:flex px-4 leading-none max-w-4xl">
           <div className="flex-none ">
             <img
-              src="public/img/portfolios/happyshop.png"
+              src={image}
               alt="pic"
-              className="h-56 w-56 rounded-md shadow-2xl transform -translate-y-4 border-4 rounded-xl border-[#00FFCA]"
+              className="h-60 w-72 shadow-2xl transform -translate-y-4 border-4 rounded-xl border-[#00FFCA]"
             />
           </div>
 
           <div className="flex-col text-white">
-            <p className="m-4 text-2xl font-bold">Nama (February 2023)</p>
+            <p className="m-4 text-2xl font-bold">{name}</p>
             <hr className="hr-text" data-content="" />
 
-            <p className="hidden md:block px-4 my-4 text-sm text-left">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
-              cupiditate nisi odit deleniti quidem est accusantium mollitia id
-              repellendus at, earum temporibus laboriosam, ullam praesentium
-              maiores veritatis repellat voluptate voluptas.
+            <p className="hidden md:block px-4 my-4 text-sm text-justify ">
+              {description}
             </p>
             <div className="text-xs m-2">
               <button className="border border-gray-400 text-gray-400 rounded-md px-4 py-2 m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#14FFEC] duration-300">
@@ -69,9 +66,17 @@ export function CardProjects({
             </div>
           </div>
         </div>
-        <div className="flex justify-end gap-5 px-4 mb-4 text-white">
-          <BsGithub className="w-10 h-8" />
-          <p className="text-sm mt-2">See the source on Github.</p>
+        <div className="flex justify-end gap-3 px-4 mb-4 text-white">
+          <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#14FFEC] duration-300">
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <BsGithub className="w-10 h-8" />
+            </a>
+          </button>
+          <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <p className="text-sm mt-2">See the source on Github.</p>
+            </a>
+          </button>
         </div>
       </div>
     </div>

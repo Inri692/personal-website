@@ -7,10 +7,10 @@ import SideProfil from "../components/SideProfil";
 import { CardProjects } from "../components/Card";
 import { CardSkills } from "../components/Card";
 import { Layout } from "../components/Layout";
-import Projects from "../components/Projects";
 import About from "../components/About";
 import Name from "../components/Name";
 
+import projects from "../utils/DataProject";
 import skills from "../utils/DataSkill";
 
 const Home = () => {
@@ -51,12 +51,17 @@ const Home = () => {
                 id="projects"
                 className="max-h-screen flex flex-cols gap-4 mt-40"
               >
-                <CardProjects
-                  image="image"
-                  name="name"
-                  description="description"
-                  link="link"
-                />
+                <div className="flex flex-col">
+                  {projects.map((project) => (
+                    <CardProjects
+                      key={project.id}
+                      image={project.image}
+                      name={project.name}
+                      description={project.description}
+                      link={project.link}
+                    />
+                  ))}
+                </div>
               </div>
             </Layout>
           </div>
