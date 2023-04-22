@@ -7,8 +7,8 @@ import { BsGithub } from "react-icons/bs";
 const SideProfil = () => {
   return (
     <div className="flex flex-col ">
-      <img src={gambar} alt="" className="rounded-full m-16" />
-      <div className="flex flex-col place-items-center gap-3">
+      <img src={gambar} alt="" className="rounded-full m-10" />
+      <div className="flex flex-col place-items-center">
         <h1 className="text-3xl uppercase font-bold text-[#00FFCA] underline decoration-sky-500/30">
           Inri Veronika
         </h1>

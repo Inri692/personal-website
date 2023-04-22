@@ -6,8 +6,8 @@ interface CardSkill {
 }
 export function CardSkills({ id, name, image }: CardSkill) {
   return (
-    <div className="w-56 h-56 bg-white shadow-md rounded-xl border-2 border-[#00FFCA]">
-      <div className="block overflow-hidden">
+    <div className="w-56 h-56 bg-white shadow-md rounded-xl border-2 border-[#00FFCA] ">
+      <div className="overflow-hidden ">
         <img
           className="hover:scale-125 ease-in duration-150 w-full h-44 mt-2"
           src={image}
@@ -34,13 +34,13 @@ export function CardProjects({
 }: CardProject) {
   return (
     <div className="grid place-items-center mx-10 my-10">
-      <div className="rounded-md bg-gray-800 border-2 rounded-xl border-white">
-        <div className="md:flex px-4 leading-none max-w-4xl">
-          <div className="flex-none ">
+      <div className="rounded-md bg-gray-800 border-2 border-white">
+        <div className="md:flex px-4 max-w-4xl">
+          <div className="flex-none  ">
             <img
               src={image}
               alt="pic"
-              className="h-60 w-72 shadow-2xl transform -translate-y-4 border-4 rounded-xl border-[#00FFCA]"
+              className="h-60 w-72 transform -translate-y-4 border-4 rounded-xl border-[#00FFCA] bg-black"
             />
           </div>
 

@@ -19,7 +19,9 @@ const Home = () => {
       <div className="bg-[#323232] rounded-xl mx-8 ">
         <div className="flex flex-row text-white">
           <div className="basis-1/4">
-            <SideProfil />
+            <div className="h-screen flex justify-center items-center">
+              <SideProfil />
+            </div>
           </div>
 
           <div className="basis-3/4 bg-black h-screen rounded-lg">
@@ -37,7 +39,7 @@ const Home = () => {
                 <h1 className="font-bold text-5xl text-[#00FFCA] mx-10">
                   Skills
                 </h1>
-                <div className="grid grid-cols-3 gap-4 mx-10">
+                <div className="md:grid grid-cols-3 gap-4 mx-10">
                   {skills.map((skill) => (
                     <CardSkills
                       key={skill.id}
@@ -66,9 +68,9 @@ const Home = () => {
             </Layout>
           </div>
 
-          <div className="basis-1/6">
-            <div className="navbar w-20 h-3/6 bg-white m-16 mt-32  flex justify-center rounded-full border-2 border-[#00FFCA]">
-              <div className="flex flex-col justify-around text-black m-3">
+          <div className="basis-1/6 max-h-screen flex justify-center items-center">
+            <div className="w-20 h-3/6 bg-white m-16 mt-32  flex justify-center rounded-full border-2 border-[#00FFCA]">
+              <div className="md:flex flex-col justify-around text-black m-3">
                 <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-[#14FFEC] duration-300 ">
                   <a href="#name">
                     <BiHome className=" w-12 h-12" />
