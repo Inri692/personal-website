@@ -1,12 +1,12 @@
-import React from "react";
-import { BiHome } from "react-icons/bi";
 import { BsFillPersonFill } from "react-icons/bs";
 import { BsCodeSlash } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
+import { BiHome } from "react-icons/bi";
 
-import { Layout } from "../components/Layout";
 import SideProfil from "../components/SideProfil";
+import { CardProjects } from "../components/Card";
 import { CardSkills } from "../components/Card";
+import { Layout } from "../components/Layout";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import Name from "../components/Name";
@@ -47,8 +47,16 @@ const Home = () => {
                   ))}
                 </div>
               </div>
-              <div id="projects">
-                <Projects />
+              <div
+                id="projects"
+                className="max-h-screen flex flex-cols gap-4 mt-40"
+              >
+                <CardProjects
+                  image="image"
+                  name="name"
+                  description="description"
+                  link="link"
+                />
               </div>
             </Layout>
           </div>
