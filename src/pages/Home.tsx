@@ -1,7 +1,13 @@
 import React from "react";
+import { BiHome } from "react-icons/bi";
+import { BsFillPersonFill } from "react-icons/bs";
+import { BsCodeSlash } from "react-icons/bs";
+import { CgWebsite } from "react-icons/cg";
+
 import { Layout } from "../components/Layout";
 import SideProfil from "../components/SideProfil";
-import Sidebar from "../components/Sidebar";
+import Projects from "../components/Projects";
+import About from "../components/About";
 import Name from "../components/Name";
 import Skills from "../components/Skills";
 
@@ -14,15 +20,40 @@ const Home = () => {
             <SideProfil />
           </div>
 
-          <div className="basis-3/4 bg-[#0D7377] h-screen rounded-lg">
+          <div className="basis-3/4 bg-black h-screen rounded-lg">
             <Layout>
-              <Name />
-              <Skills />
+              <div id="name">
+                <Name />
+              </div>
+              <div id="about">
+                <About />
+              </div>
+              <div id="skill">
+                <Skills />
+              </div>
+              <div id="projects">
+                <Projects />
+              </div>
             </Layout>
           </div>
 
           <div className="basis-1/6">
-            <Sidebar />
+            <div className="navbar w-20 h-3/6 bg-white m-16 mt-32  flex justify-center rounded-full border-2 border-[#00FFCA]">
+              <div className="flex flex-col justify-around text-black m-3">
+                <a href="#name">
+                  <BiHome className=" w-12 h-12" />
+                </a>
+                <a href="#about">
+                  <BsFillPersonFill className=" w-12 h-12" />
+                </a>
+                <a href="#skill">
+                  <BsCodeSlash className=" w-12 h-12" />
+                </a>
+                <a href="#projects">
+                  <CgWebsite className=" w-12 h-12" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
